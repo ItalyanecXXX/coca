@@ -1,7 +1,7 @@
 <header class="header">
   <h1 class="hidden">Coca - Digital Marketing Website. Home page</h1>
   <div class="header__container container">
-    <a href="/" aria-label="Home page">
+    <a class="header__logo" href="/" aria-label="Home page">
       <svg
         width="140"
         height="66"
@@ -32,7 +32,7 @@
         />
       </svg>
     </a>
-    <div class="header__right">
+    <div class="header__right" data-burger="menu">
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -58,5 +58,8 @@
         />
       </label>
     </div>
+    <button class="burger" data-burger="btn" aria-label="Burger menu">
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
