@@ -4,10 +4,18 @@
   --neutral-color-20: #f5f5f5;
   --neutral-color-60: #18181d;
   --neutral-color-100: #1d1e25;
+  --neutral-color-120: #828282;
+  --neutral-color-130: #d9d9d9;
+
+  // Primary Color
+  --primary-color-50: #4e7ddb;
 
   // container
   --container-padding: 15px;
   --container-width: 1200px;
+
+  // transition
+  --transition: 0.2s ease-in-out;
 }
 
 [data-theme='dark'] {

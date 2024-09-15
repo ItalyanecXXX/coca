@@ -65,3 +65,9 @@ button {
 .body {
   background-color: var(--neutral-color-10);
 }
+
+.hidden {
+  overflow: hidden;
+  font-size: 0;
+  opacity: 0;
+}
