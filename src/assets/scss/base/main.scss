@@ -11,10 +11,14 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.body {
   overflow-x: hidden;
   color: var(--neutral-color-100);
   background-color: var(--neutral-color-10);
+
+  &--fixed {
+    overflow-y: hidden;
+  }
 }
 
 img {
@@ -61,10 +65,6 @@ button {
   margin: 0 auto;
   padding: 0 var(--container-padding);
   max-width: calc(var(--container-width) + (var(--container-padding) * 2));
-}
-
-.body {
-  background-color: var(--neutral-color-10);
 }
 
 .hidden {
