@@ -39,8 +39,33 @@
     gap: 10px 30px;
     flex-wrap: wrap;
 
+    @include tablet {
+      display: none;
+    }
+
     @include mobile {
       gap: 10px;
+    }
+  }
+
+  &__swaiper {
+    &.swiper {
+      display: none;
+      width: 100%;
+
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+
+  &__slide {
+    &.swiper-slide {
+      @include flex-all-center;
+      border-radius: 16px;
+      width: 160px;
+      height: 90px;
+      background-color: #fff;
     }
   }
 
