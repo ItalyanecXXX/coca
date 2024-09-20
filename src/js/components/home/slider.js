@@ -68,7 +68,22 @@ export const useInsightSlider = () => {
         centeredSlides: false,
         allowTouchMove: false,
         slidesPerView: 2,
+        grabCursor: false,
       },
+    },
+  });
+};
+
+export const useTestimonialsSlider = () => {
+  new Swiper('.testimonials__swiper', {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 22,
+    loop: true,
+
+    navigation: {
+      nextEl: '.testimonials__btn--next',
+      prevEl: '.testimonials__btn--prev',
     },
   });
 };
