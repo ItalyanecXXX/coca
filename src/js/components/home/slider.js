@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 export const usePartnerSlider = () => {
   new Swiper('.partners__swaiper', {
     modules: [Autoplay],
+    enabled: true,
     slidesPerView: 'auto',
     spaceBetween: 32,
     loop: true,
@@ -20,6 +21,12 @@ export const usePartnerSlider = () => {
     },
 
     speed: 700,
+
+    breakpoints: {
+      993: {
+        enabled: false,
+      },
+    },
   });
 };
 
@@ -76,10 +83,14 @@ export const useInsightSlider = () => {
 
 export const useTestimonialsSlider = () => {
   new Swiper('.testimonials__swiper', {
-    modules: [Navigation],
+    modules: [Navigation, EffectFade],
     slidesPerView: 1,
     spaceBetween: 22,
-    loop: true,
+    effect: 'fade',
+
+    fadeEffect: {
+      crossFade: true,
+    },
 
     navigation: {
       nextEl: '.testimonials__btn--next',
