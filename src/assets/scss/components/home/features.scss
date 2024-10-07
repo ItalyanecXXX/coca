@@ -14,10 +14,6 @@
       align-items: flex-start;
     }
 
-    // @include tablet {
-    //   align-items: center;
-    // }
-
     @include mobile {
       gap: 25px;
     }
