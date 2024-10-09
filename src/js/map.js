@@ -49,7 +49,6 @@ export const yandexMap = () => {
 <<<<<<< HEAD
             <img class="hero__map-marker-icon" src="${mapMarkerIcon}" width="54" height="54" alt="marker in map" />
 =======
-            <img class="hero__map-marker-icon" src="assets/icons/yandex-map-marker-icon.svg" width="54" height="54" alt="marker in map" />
 >>>>>>> 3fd99113475dd42f7247f94d4515e0574f73855b
         `;
 
