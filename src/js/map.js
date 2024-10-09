@@ -46,10 +46,7 @@ export const yandexMap = () => {
               <h4 class="hero__map-marker-title">Yogja, INA</h4>
               <p class="hero__map-marker-location">100 Smith Street Collingwood VIC 3066 AU</p>
             </div>
-<<<<<<< HEAD
             <img class="hero__map-marker-icon" src="${mapMarkerIcon}" width="54" height="54" alt="marker in map" />
-=======
->>>>>>> 3fd99113475dd42f7247f94d4515e0574f73855b
         `;
 
         map.addChild(marker);
