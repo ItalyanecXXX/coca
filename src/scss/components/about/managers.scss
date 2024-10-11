@@ -1,0 +1,169 @@
+.managers {
+  padding: 160px 0 150px;
+
+  @include tablet {
+    padding: 60px 0 50px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 870px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+  }
+
+  &__subtitle {
+    margin-bottom: 90px;
+    max-width: 490px;
+    font-weight: 500;
+    line-height: 1.78;
+    color: var(--neutral-color-150);
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 105px;
+
+    @include small-tablet {
+      margin-bottom: 80px;
+    }
+
+    @include mobile {
+      margin-bottom: 56px;
+    }
+
+    &-pagination {
+      &.swiper-pagination {
+        &.swiper-pagination-bullets {
+          top: 10px;
+          bottom: auto;
+          display: none;
+
+          @include tablet {
+            display: block;
+          }
+
+          & .swiper-pagination-bullet {
+            background-color: #484c55;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 126px;
+      left: 32.8%;
+      z-index: var(--z-index-2);
+      gap: 15px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: var(--neutral-color-10);
+      transform: translateX(-50%);
+      transition: opacity var(--transition);
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &-pred,
+    &-next {
+      cursor: pointer;
+
+      & line {
+        stroke: #7e8492;
+      }
+    }
+  }
+
+  &__article {
+    max-width: 379px;
+
+    &-wrapper {
+      @include flex-justify-between;
+      gap: 30px;
+    }
+
+    &-info {
+      @include flex-column;
+      gap: 8px;
+    }
+
+    &-name {
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--neutral-color-100);
+    }
+
+    &-prof {
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--neutral-color-150);
+    }
+
+    &-social {
+      @include flex-all-center;
+      gap: 8px;
+    }
+
+    &-item {
+      & svg {
+        & path {
+          fill: var(--neutral-color-90);
+        }
+      }
+    }
+  }
+
+  &__masterTouh {
+    @include flex-justify-between;
+    gap: 20px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    &-title {
+      max-width: 570px;
+      font-weight: 626;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include tablet {
+        max-width: 100%;
+      }
+    }
+
+    &-text {
+      max-width: 460px;
+      font-weight: 500;
+      line-height: 1.78;
+      color: var(--neutral-color-150);
+
+      @include tablet {
+        max-width: 100%;
+      }
+    }
+
+    &-link {
+      display: block;
+      margin-top: 24px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--neutral-color-100);
+
+      & svg {
+        & path {
+          fill: var(--neutral-color-100);
+        }
+      }
+    }
+  }
+}
