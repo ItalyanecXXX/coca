@@ -1,0 +1,121 @@
+.articles {
+  padding: 160px 0;
+
+  @include mobile {
+    padding: 80px 0;
+  }
+
+  &__wrapper {
+    @include flex-al-between;
+    gap: 15px;
+    margin-bottom: 80px;
+
+    @include small-mobile {
+      gap: 30px;
+      flex-direction: column;
+      align-items: end;
+      margin-bottom: 30px;
+    }
+
+    &__info {
+      &-title {
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+      }
+
+      &-text {
+        font-weight: 500;
+        line-height: 1.78;
+        color: var(--neutral-color-150);
+      }
+    }
+  }
+
+  &__control {
+    @include flex-align-center;
+    gap: 16px;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid var(--neutral-color-40);
+    border-radius: 50%;
+    padding: 16px;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      border-color: var(--neutral-color-100);
+      background-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+
+    &--next {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__item {
+    padding-bottom: 10px;
+    max-width: 406px;
+
+    &-title {
+      margin: 24px 0 16px;
+      font-weight: 600;
+      line-height: 1.31;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+    }
+
+    &-text {
+      margin-bottom: 24px;
+      font-weight: 500;
+      line-height: 1.78;
+      color: var(--neutral-color-150);
+    }
+
+    &-btn {
+      display: block;
+      border: 1px solid var(--neutral-color-40);
+      border-radius: 100px;
+      padding: 16px 35px;
+      max-width: 30%;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      color: var(--neutral-color-100);
+      transition: opacity var(--transition);
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &--popular {
+        color: #1d1e25;
+        background-color: #fff;
+      }
+
+      &-wrapper {
+        text-align: center;
+      }
+    }
+  }
+}

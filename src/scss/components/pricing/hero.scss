@@ -187,7 +187,7 @@
       color: var(--neutral-color-100);
 
       &--popular {
-        color: #fff;
+        color: var(--neutral-color-10);
       }
 
       &-text {
@@ -232,7 +232,7 @@
       }
 
       &--popular {
-        color: #fff;
+        color: var(--neutral-color-10);
       }
 
       &--inaccess {
